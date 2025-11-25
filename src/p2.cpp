@@ -1,14 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int ma(int a,int b){
+int gcd(int a,int b){
     if(a%b==0) return b;
-    return ma(b,a%b);
+    return gcd(b,a%b);
 }
-
 int main(){
     int a,b;
     cin>>a>>b;
-    cout<<ma(a,b)<<endl;
+    cout<<gcd(a,b)<<endl;
 return 0;
 }
